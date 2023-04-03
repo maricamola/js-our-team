@@ -1,40 +1,61 @@
+//Creo array con le info
 const teamMembri = [
   {
     nome: 'Wayne barnette',
     ruolo: 'Founder & CEO',
-    foto: 'wayne-barnett-founder-cea.jpg',
+    foto: '',
   },
   {
     nome: 'Angela Caroll',
     ruolo: 'Chied Editor',
-    foto: 'angela-caroll-chief-editor.jpg',
+    foto: '',
   },
   {
     nome: 'Walter Gordon',
     ruolo: 'Office Manager',
-    foto: 'walter-gordon-office-manager.jpg',
+    foto: '',
   },
   {
     nome: 'Angela Lopez',
     ruolo: 'Social Media Manager',
-    foto: 'scott-estrada-developer-jpg',
+    foto: '',
   },
   {
     nome: 'Scott Estrada',
     ruolo: 'Developer',
-    foto: 'scott-estrada.developer.jpg',
+    foto: '',
   },
   {
     nome: 'Barbara Ramos',
     ruolo: 'Graphin Designer',
-    foto: 'barbara-ramos-graphic.designer.jpgsa',
+    foto: '',
   }
 ]
+
+const list = document.querySelector('ul');
 
 //Stampo in console
 for (let membro of teamMembri) {
   console.log(membro.nome, membro.ruolo, membro.foto);
 }
+
+//Stampo in pagina
+for(let i in teamMembri){
+  const singoloMembro = teamMembri[i]
+  console.log(singoloMembro);
+
+  // ciclo il singolo membro
+  for(let key in singoloMembro){
+    list.innerHTML += `
+      <li>${singoloMembro[key]} </li>
+    `
+  }
+  list.innerHTML += `
+      <li> </li>
+    `
+}
+
+
 
 
 
