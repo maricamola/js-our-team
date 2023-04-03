@@ -16,5 +16,7 @@ Trasformare la stringa foto in una immagine effettiva
 BONUS 2:
 Organizzare i singoli membri in card/schede
 ## Steps
+1) Creare l’array di oggetti con le informazioni fornite(nome,ruolo,foto)
+2)
 
 
